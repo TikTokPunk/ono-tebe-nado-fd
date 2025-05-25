@@ -164,11 +164,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 596px;
+  min-height: 596px;
   width: 334px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 50px 40px 45px 40px;
 }
 .film_dropout_lot {
   background-image: url("../images/card-lot-01.jpg");
@@ -182,22 +183,24 @@
 .film_dropout_lot__head,
 .boring_day_lot__head,
 .easy_picture_lot__head {
-  margin: 48px 40px auto 40px;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
   text-transform: uppercase;
   text-decoration: underline;
-  z-index: 2;
   color: white;
 }
 .text_in_lots {
-  margin: auto 40px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-weight: 250;
   font-size: 20px;
   line-height: 120%;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
   color: white;
+  z-index: 3;
 }
 .under_lots_continue {
   margin-top: 4px;
@@ -240,6 +243,22 @@
   line-height: 100%;
   min-height: 47px;
   width: 297px;
+}
+.text_about {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+}
+.text_about__top {
+  margin-bottom: 24px;
+  width: 688px;
+}
+.text_about__bottom {
+  margin-bottom: 0px;
+  width: 688px;
+}
+.text_about__bottom__correction {
+  min-width: 690px;
 }
 .about_text_description {
   margin-top: 95px;
@@ -291,6 +310,7 @@
 .links_footer {
   position: relative;
   display: flex;
+  list-style: none;
   gap: 48px;
   padding-top: 58px;
   padding-left: 168px;
