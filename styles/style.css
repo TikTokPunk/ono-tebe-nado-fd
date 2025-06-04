@@ -1,3 +1,7 @@
+/* * {
+outline: 5px solid red;
+} */
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -70,26 +74,28 @@
   z-index: 0;
 }
 .overlay_text_title {
+  padding-top: 140px;
   position: relative;
-  display: grid;
-  color: white;
-  font-family: "Raleway", sans-serif;
   z-index: 3;
+  color: white;
   font-size: 100px;
   text-transform: uppercase;
   letter-spacing: 30px;
 }
 .top_overlay {
-  transform: translate(0%, -2%);
-  position: relative;
+  text-align: left;
+  display: block;
+  transform: translate(0%, -119%);
 }
 .mid_overlay {
-  position: relative;
-  transform: translate(33%, 14%);
+  text-align: center;
+  display: block;
+  transform: translate(1.5%, -104%);
 }
 .bot_overlay {
-  position: relative;
-  transform: translate(61.5%, 28%);
+  text-align: right;
+  display: block;
+  transform: translate(3%, -89%);
 }
 .cover_text_plus_button {
   position: relative;
@@ -98,7 +104,6 @@
   align-items: center;
   justify-content: space-between;
   width: 1000px;
-  padding-top: 140px;
 }
 .lower_text_lotusfield {
   position: relative;
