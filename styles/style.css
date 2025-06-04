@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  min-height: 293px;
   padding: 67px 50px 66px;
 }
 .logo_header_block {
@@ -11,7 +10,7 @@
 }
 .logo_header {
   width: 135px;
-  height: 154px;
+  height: 156px;
   justify-self: center;
 }
 .navigation_header {
@@ -21,7 +20,6 @@
   display: flex;
   align-items: center;
   width: 392px;
-  height: 22px;
   padding-left: 0;
   color: black;
   gap: 33px;
@@ -39,23 +37,14 @@
 .address {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   font-style: normal;
   font-size: 18px;
 }
 .header__address {
-  margin-left: 195px;
+  margin-left: 193px;
   max-width: 240px;
-}
-.phone_number_header,
-.fact_adress_header {
-  line-height: 25px;
-}
-.header_nav__height_correction {
-  line-height: 5px; /*добавил так как без него у меня слипаются строчки*/
-} 
-.fact_adress_header__shift-line {
-  line-height: 21px;
+  margin-bottom: 10px;
 }
 .main_content {
   position: relative;
@@ -76,51 +65,40 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 757px;
   z-index: 0;
 }
 .overlay_text_title {
   position: relative;
-  width: 1000px;
-  min-height: 385px;
+  display: grid;
   color: white;
-  font-family: "Raleway-Bold", sans-serif;
+  font-family: "Raleway", sans-serif;
   z-index: 3;
   font-size: 100px;
   text-transform: uppercase;
-}
-.ONO_overlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  letter-spacing: 29px;
-}
-.TEBE_overlay {
-  position: relative;
-  top: 137px;
-  left: -13px;
-  transform: translate(-50%, -50%);
-  letter-spacing: 27px;
-}
-.correction_letter-spacing__second {
-  font-size: 97px;
-}
-.NADO_overlay {
-  position: relative;
-  top: 155px;
-  right: -614px;
   letter-spacing: 30px;
-  font-size: 99px;
+}
+.top_overlay {
+  transform: translate(0%, -2%);
+  position: relative;
+}
+.mid_overlay {
+  position: relative;
+  transform: translate(33%, 14%);
+}
+.bot_overlay {
+  position: relative;
+  transform: translate(61.5%, 28%);
 }
 .cover_text_plus_button {
   position: relative;
-  padding-top: 108px;
   display: flex;
   color: white;
   align-items: center;
   justify-content: space-between;
-  min-height: 51px;
   width: 1000px;
+  padding-top: 140px;
 }
 .lower_text_lotusfield {
   position: relative;
@@ -144,7 +122,7 @@
   border: 1px solid currentColor;
 }
 .overlay_text_title_main {
-  padding-top: 182px;
+  padding-top: 185px;
   padding-left: 64px;
   position: relative;
   font-weight: 700;
@@ -153,7 +131,6 @@
 }
 .lots_section {
   display: grid;
-  min-height: 596px;
   position: relative;
   padding: 29px 24px 30px 24px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -162,14 +139,14 @@
 .lot_container_main {
   position: relative;
   display: flex;
+  min-height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 596px;
   width: 334px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px 40px 45px 40px;
+  padding: 50px 40px 46px 40px;
 }
 .film_dropout_lot {
   background-image: url("../images/card-lot-01.jpg");
@@ -180,21 +157,19 @@
 .easy_picture_lot {
   background-image: url("../images/card-lot-03.jpg");
 }
-.film_dropout_lot__head,
-.boring_day_lot__head,
-.easy_picture_lot__head {
+.lots__head {
   font-weight: 700;
   font-size: 22px;
-  line-height: 120%;
+  line-height: 115%;
   text-transform: uppercase;
   text-decoration: underline;
   color: white;
+  padding-bottom: 39px;
 }
 .text_in_lots {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-weight: 250;
   font-size: 20px;
   line-height: 120%;
   height: 100%;
@@ -213,7 +188,6 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 72px;
-  min-height: 595px;
   width: 1051px;
   padding: 120px 24px 123px 24px;
 }
@@ -224,7 +198,7 @@
   width: 240px;
   height: 240px;
   border: 1px solid black;
-  border-radius: 120px;
+  border-radius: 50%;
   background-color: black;
 }
 .logo-white_about {
@@ -241,7 +215,6 @@
   text-transform: uppercase;
   font-size: 40px;
   line-height: 100%;
-  min-height: 47px;
   width: 297px;
 }
 .text_about {
@@ -266,7 +239,6 @@
   display: flex;
   flex-direction: column;
   width: 693px;
-  min-height: 449px;
   gap: 104px;
   font-weight: 400;
   font-size: 20px;
@@ -279,20 +251,15 @@
   grid-template-rows: auto;
   gap: 10px;
   width: 100%;
-  min-height: 180px;
+  padding: 0 0px 85px;
 }
 .footer__correction {
   padding-top: 56px;
   padding-left: 50px;
 }
-.phone_number_footer {
-  line-height: 25px;
-}
-.mail_adress_footer {
-  line-height: 5px;
-}
-.fact_adress_footer {
-  line-height: 25px;
+.footer__link_adress {
+  display: flex;
+  flex-direction: column;
 }
 .nav_footer_container {
   padding-top: 58px;
@@ -300,7 +267,7 @@
   flex-direction: column;
   width: 164px;
   line-height: 21px;
-  letter-spacing: 1px;
+  font-size: 18px;
 }
 .navigation_content__footer {
   list-style-type: none;
